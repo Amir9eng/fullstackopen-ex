@@ -1,19 +1,17 @@
 import React from 'react'
 
-function Part({ part, exercise}) {
+function Part({ part, exercises}) {
   return ( <p>
-    {part} {exercise}
+    {part.name} {part.exercises}
   </p> )
   
 }
 
-function Content({ part1, exercises1, part2, exercises2, part3, exercises3 }) {
+function Content({ parts }) {
   return (
-    <>
-      <Part1 part={part1} exercise={exercise1}  />
-      <Part1 part={part2} exercise={exercise2}  />
-      <Part1 part={part3} exercise={exercise3}  />
-    </>
+    <div>
+      {parts.map((part, partIndex) => <Part key = {`part_${partIndex}`} part= {part} /> )}
+    </div>
   )
 }
 export default Content
