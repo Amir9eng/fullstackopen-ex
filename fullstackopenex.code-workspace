@@ -2,6 +2,9 @@
 	"folders": [
 		{
 			"path": "part1"
+		},
+		{
+			"path": "part0"
 		}
 	],
 	"settings": {
