@@ -1,13 +1,7 @@
 {
 	"folders": [
 		{
-			"path": "part1"
-		},
-		{
-			"path": "part0"
-		},
-		{
-			"path": "javascript-trials"
+			"path": "."
 		}
 	],
 	"settings": {

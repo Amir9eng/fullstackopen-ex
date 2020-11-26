@@ -149,5 +149,5 @@ refresh()
 
 setInterval(() => {
   refresh()
-  counter += 1
+  counter -= 1
 }, 1000)
