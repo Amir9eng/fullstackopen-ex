@@ -152,6 +152,3 @@ setInterval(() => {
   counter += 1
 }, 1000)
 
-<button onClick={increaseByOne}> 
-  plus
-</button>
