@@ -152,3 +152,21 @@ setInterval(() => {
   counter += 1
 }, 1000)
 
+const App = () => {
+  const [ counter, setCounter ] = useState(0)
+
+  const increaseByOne = () => setCounter(counter + 1)
+  const setToZero = () => setCounter(0)
+
+  return (
+    <div>
+      <Display counter={counter}/>
+      <button onClick={increaseByOne}>
+        plus
+      </button>
+      <button onClick={setToZero}> 
+        zero
+      </button>
+    </div>
+  )
+}
