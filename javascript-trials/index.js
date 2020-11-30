@@ -194,5 +194,5 @@ return (
     />           
   </div>
 )
-
+const Display = ({ counter }) => <div>{counter}</div>
 
