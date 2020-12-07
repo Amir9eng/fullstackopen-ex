@@ -4,6 +4,7 @@ import ReactDOM from 'react-dom'
 import Header from './components/Header'
 import Content from './components/Content'
 import Total from './components/Total'
+import Unicafe from './components/Unicafe'
 
 const App = () => {
   const course = 'Half Stack application development'
@@ -27,6 +28,7 @@ const App = () => {
       <Header course={course} />
       <Content parts= {parts}/>
       <Total parts={parts}  />
+      <Unicafe />
     </div>
   )
 }
