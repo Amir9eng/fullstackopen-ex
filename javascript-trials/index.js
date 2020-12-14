@@ -42,7 +42,7 @@ const sum = (p1, p2) => {
 // Object methods and "this"
 
 const arto = {
-  name: 'Arto He',
+  name: 'Arto Hellas',
   age: 35,
   education: 'PhD',
   greet: function() {
