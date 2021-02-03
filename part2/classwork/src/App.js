@@ -1,8 +1,9 @@
 import React, { useState } from "react";
+import Axios from "axios";
 import Note from "./components/Note";
 
-const App = (props) => {
-  const [notes, setNotes] = useState(props.notes);
+const App = () => {
+  const [notes, setNotes] = useState([]);
   const [newNote, setNewNote] = useState("add a new note");
   const [showAll, setShowAll] = useState(true);
 
@@ -15,8 +16,25 @@ const App = (props) => {
       important: Math.random() < 0.5,
       id: notes.length + 1,
     };
+
+    if (!newNote.trim()) {
+      alert("oogbadun ni , write something there jare");
+      return;
+    }
+
     setNotes(notes.concat(noteObject));
     setNewNote(" ");
+
+    Axios.get("http://localhost:3003/notes").then((response) => {
+      const notes = response.data;
+      console.log(notes);
+    });
+
+    Axios.post("http://localhost:3003/notes", noteObject).then((response) => {
+      console.log(response);
+      setNotes(notes.concat(response.data));
+      setNewNote("");
+    });
   };
 
   const handleNewNote = (event) => {
@@ -25,6 +43,9 @@ const App = (props) => {
   };
 
   const notesToShow = showAll ? notes : notes.filter((note) => note.important);
+
+  console.log(notes);
+  console.log(notesToShow);
 
   return (
     <div>
