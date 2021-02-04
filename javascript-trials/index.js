@@ -183,3 +183,13 @@ const Display = ({ counter }) => <div>{counter}</div>;
 const Button = (props) => {
   return <button onClick={props.handleClick}>{props.text}</button>;
 };
+
+const name = "Leevi";
+const age = 0;
+
+const person = {
+  name: name,
+  age: age,
+};
+
+const person = { name, age };
