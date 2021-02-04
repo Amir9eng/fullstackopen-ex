@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Axios from "axios";
+import noteService from "./services/notes";
 import Note from "./components/Note";
 
 const App = () => {
@@ -7,15 +8,16 @@ const App = () => {
   const [newNote, setNewNote] = useState("add a new note");
   const [showAll, setShowAll] = useState(true);
 
+  useEffect(() => {
+    noteService.getAll().then((initialNotes) => setNotes(initialNotes));
+  }, []);
+
   const toggleImportanceOf = (id) => {
-    const url = `http://localhost:3003/notes/${id}`;
     const note = notes.find((n) => n.id === id);
     const changedNote = { ...note, important: !note.important };
 
-    Axios.put(url, changedNote).then((response) => {
-      setNotes(notes.map((note) => (note.id !== id ? note : response.data)));
-
-      console.log(`important of ${id} needs to be toggled`);
+    noteService.update(id, changedNote).then((returnedNotes) => {
+      setNotes(notes.map((note) => (note.id !== id ? note : returnedNotes)));
     });
   };
 
@@ -30,16 +32,21 @@ const App = () => {
     };
 
     if (!newNote.trim()) {
-      alert("oogbadun ni , write something there jare");
+      alert("ogbeni , write something there jare");
       return;
     }
 
-    setNotes(notes.concat(noteObject));
-    setNewNote(" ");
+    // setNotes(notes.concat(noteObject));
+    // setNewNote(" ");
 
-    Axios.get("http://localhost:3003/notes").then((response) => {
-      const notes = response.data;
-      console.log(notes);
+    // Axios.get("http://localhost:3003/notes").then((response) => {
+    //   const notes = response.data;
+    //   console.log(notes);
+    // });
+
+    noteService.create(noteObject).then((returnedNotes) => {
+      setNotes(notes.concat(returnedNotes));
+      setNewNote("");
     });
 
     Axios.post("http://localhost:3003/notes", noteObject).then((response) => {

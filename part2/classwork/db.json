@@ -29,6 +29,12 @@
       "date": "2021-02-04T11:07:58.962Z",
       "important": false,
       "id": 5
+    },
+    {
+      "content": "add a new note",
+      "date": "2021-02-04T12:21:10.166Z",
+      "important": true,
+      "id": 6
     }
   ]
 }
