@@ -1,160 +1,34 @@
 {
   "notes": [
     {
-      "id": 1,
-      "content": "HTML is easy",
-      "date": "2019-05-30T17:30:31.098Z",
-      "important": true
+      "content": "add a new note",
+      "date": "2021-02-04T11:00:39.170Z",
+      "important": true,
+      "id": 1
     },
     {
-      "id": 2,
-      "content": "Browser can execute only JavaScript",
-      "date": "2019-05-30T18:39:34.091Z",
-      "important": false
+      "content": " ok",
+      "date": "2021-02-04T11:01:26.905Z",
+      "important": false,
+      "id": 2
     },
     {
-      "id": 3,
-      "content": "GET and POST are the most important methods of HTTP protocol",
-      "date": "2019-05-30T19:20:14.298Z",
-      "important": true
+      "content": " ter",
+      "date": "2021-02-04T11:07:30.849Z",
+      "important": false,
+      "id": 3
     },
     {
-      "content": "at where?",
-      "date": "2021-02-03T15:01:11.901Z",
+      "content": " go",
+      "date": "2021-02-04T11:07:42.100Z",
       "important": true,
       "id": 4
     },
     {
-      "content": " nibo",
-      "date": "2021-02-03T15:01:16.427Z",
+      "content": "are you there",
+      "date": "2021-02-04T11:07:58.962Z",
       "important": false,
       "id": 5
-    },
-    {
-      "content": " awon tani",
-      "date": "2021-02-03T15:01:21.510Z",
-      "important": false,
-      "id": 6
-    },
-    {
-      "content": " eyin ati tani?",
-      "date": "2021-02-03T15:01:28.826Z",
-      "important": true,
-      "id": 7
-    },
-    {
-      "content": " ",
-      "date": "2021-02-03T15:11:30.172Z",
-      "important": false,
-      "id": 8
-    },
-    {
-      "content": " ",
-      "date": "2021-02-03T15:11:30.218Z",
-      "important": false,
-      "id": 9
-    },
-    {
-      "content": "",
-      "date": "2021-02-03T15:11:30.507Z",
-      "important": false,
-      "id": 10
-    },
-    {
-      "content": "",
-      "date": "2021-02-03T15:11:30.621Z",
-      "important": true,
-      "id": 11
-    },
-    {
-      "content": "",
-      "date": "2021-02-03T15:11:30.798Z",
-      "important": true,
-      "id": 12
-    },
-    {
-      "content": " ",
-      "date": "2021-02-03T15:11:30.916Z",
-      "important": true,
-      "id": 13
-    },
-    {
-      "content": " ",
-      "date": "2021-02-03T15:11:31.094Z",
-      "important": true,
-      "id": 14
-    },
-    {
-      "content": " ",
-      "date": "2021-02-03T15:11:31.587Z",
-      "important": true,
-      "id": 15
-    },
-    {
-      "content": "",
-      "date": "2021-02-03T15:11:31.735Z",
-      "important": false,
-      "id": 16
-    },
-    {
-      "content": " ",
-      "date": "2021-02-03T15:11:31.954Z",
-      "important": false,
-      "id": 17
-    },
-    {
-      "content": " ",
-      "date": "2021-02-03T15:11:32.291Z",
-      "important": false,
-      "id": 18
-    },
-    {
-      "content": "",
-      "date": "2021-02-03T15:11:32.721Z",
-      "important": true,
-      "id": 19
-    },
-    {
-      "content": " ",
-      "date": "2021-02-03T15:11:32.739Z",
-      "important": false,
-      "id": 20
-    },
-    {
-      "content": " ",
-      "date": "2021-02-03T15:11:32.758Z",
-      "important": true,
-      "id": 21
-    },
-    {
-      "content": " ",
-      "date": "2021-02-03T15:11:32.774Z",
-      "important": false,
-      "id": 22
-    },
-    {
-      "content": " ",
-      "date": "2021-02-03T15:11:32.952Z",
-      "important": true,
-      "id": 27
-    },
-    {
-      "content": " ",
-      "date": "2021-02-03T15:11:32.996Z",
-      "important": false,
-      "id": 28
-    },
-    {
-      "content": " ",
-      "date": "2021-02-03T15:11:33.033Z",
-      "important": false,
-      "id": 29
-    },
-    {
-      "content": " ",
-      "date": "2021-02-03T15:11:33.069Z",
-      "important": false,
-      "id": 30
     }
   ]
 }

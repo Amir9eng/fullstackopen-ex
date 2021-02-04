@@ -7,6 +7,18 @@ const App = () => {
   const [newNote, setNewNote] = useState("add a new note");
   const [showAll, setShowAll] = useState(true);
 
+  const toggleImportanceOf = (id) => {
+    const url = `http://localhost:3003/notes/${id}`;
+    const note = notes.find((n) => n.id === id);
+    const changedNote = { ...note, important: !note.important };
+
+    Axios.put(url, changedNote).then((response) => {
+      setNotes(notes.map((note) => (note.id !== id ? note : response.data)));
+
+      console.log(`important of ${id} needs to be toggled`);
+    });
+  };
+
   const addNote = (event) => {
     event.preventDefault();
     console.log("button clicked", event.target);
@@ -56,8 +68,12 @@ const App = () => {
         </button>
       </div>
       <ul>
-        {notesToShow.map((note) => (
-          <Note key={note.id} note={note} />
+        {notesToShow.map((note, i) => (
+          <Note
+            key={i}
+            note={note}
+            toggleImportance={() => toggleImportanceOf(note.id)}
+          />
         ))}
       </ul>
       <form onSubmit={addNote}>
