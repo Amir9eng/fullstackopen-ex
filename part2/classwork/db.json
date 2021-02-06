@@ -3,7 +3,7 @@
     {
       "content": "add a new note",
       "date": "2021-02-04T11:00:39.170Z",
-      "important": true,
+      "important": false,
       "id": 1
     },
     {
@@ -21,7 +21,7 @@
     {
       "content": " go",
       "date": "2021-02-04T11:07:42.100Z",
-      "important": true,
+      "important": false,
       "id": 4
     },
     {
@@ -33,8 +33,56 @@
     {
       "content": "add a new note",
       "date": "2021-02-04T12:21:10.166Z",
-      "important": true,
+      "important": false,
       "id": 6
+    },
+    {
+      "content": "add a new note",
+      "date": "2021-02-05T11:39:06.423Z",
+      "important": false,
+      "id": 8
+    },
+    {
+      "content": "right",
+      "date": "2021-02-05T11:39:59.432Z",
+      "important": false,
+      "id": 9
+    },
+    {
+      "content": "left",
+      "date": "2021-02-05T11:47:29.552Z",
+      "important": false,
+      "id": 10
+    },
+    {
+      "content": "add a new note",
+      "date": "2021-02-05T12:11:10.527Z",
+      "important": false,
+      "id": 11
+    },
+    {
+      "content": "e",
+      "date": "2021-02-05T12:11:18.985Z",
+      "important": false,
+      "id": 12
+    },
+    {
+      "content": "first note",
+      "date": "2021-02-05T12:11:44.336Z",
+      "important": false,
+      "id": 13
+    },
+    {
+      "content": "second note",
+      "date": "2021-02-05T12:11:58.426Z",
+      "important": false,
+      "id": 14
+    },
+    {
+      "content": "third note, fourth note",
+      "date": "2021-02-05T12:14:26.670Z",
+      "important": false,
+      "id": 15
     }
   ]
 }

@@ -16,9 +16,13 @@ const App = () => {
     const note = notes.find((n) => n.id === id);
     const changedNote = { ...note, important: !note.important };
 
-    noteService.update(id, changedNote).then((returnedNotes) => {
-      setNotes(notes.map((note) => (note.id !== id ? note : returnedNotes)));
-    });
+    noteService
+      .update(id, changedNote)
+      .then((returnedNotes) => {
+        setNotes(notes.map((note) => (note.id !== id ? note : returnedNotes)));
+      })
+      .catch((error) => alert(`the note '${note.content}' was deleted`));
+    setNotes(notes.filter((n) => n.id !== id));
   };
 
   const addNote = (event) => {
@@ -50,7 +54,7 @@ const App = () => {
     });
 
     Axios.post("http://localhost:3003/notes", noteObject).then((response) => {
-      console.log(response);
+      console.log(response, "sucess!").catch(() => console.log("fail!"));
       setNotes(notes.concat(response.data));
       setNewNote("");
     });
