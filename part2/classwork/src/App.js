@@ -53,11 +53,13 @@ const App = () => {
       setNewNote("");
     });
 
-    Axios.post("http://localhost:3003/notes", noteObject).then((response) => {
-      console.log(response, "sucess!").catch(() => console.log("fail!"));
-      setNotes(notes.concat(response.data));
-      setNewNote("");
-    });
+    Axios.post("http://localhost:3002/api/notes", noteObject).then(
+      (response) => {
+        console.log(response, "success!");
+        setNotes(notes.concat(response.data));
+        setNewNote("");
+      }
+    );
   };
 
   const handleNewNote = (event) => {
