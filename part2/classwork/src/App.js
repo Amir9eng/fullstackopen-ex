@@ -53,13 +53,14 @@ const App = () => {
       setNewNote("");
     });
 
-    Axios.post("http://localhost:3002/api/notes", noteObject).then(
-      (response) => {
-        console.log(response, "success!");
-        setNotes(notes.concat(response.data));
-        setNewNote("");
-      }
-    );
+    Axios.post(
+      "https://arcane-tor-55493.herokuapp.com/api/notes",
+      noteObject
+    ).then((response) => {
+      console.log(response, "success!");
+      setNotes(notes.concat(response.data));
+      setNewNote("");
+    });
   };
 
   const handleNewNote = (event) => {
